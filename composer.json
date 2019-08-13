@@ -1,0 +1,17 @@
+{
+    "name": "orderforms/orderforms",
+    "description": "Integrate Orderforms on WordPress",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Jajo",
+            "email": "me@donjajo.com"
+        }
+    ],
+    "autoload" : {
+        "psr-4" : {
+            "OrderForms\\" : "src/"
+        }
+    },
+    "require": {}
+}
