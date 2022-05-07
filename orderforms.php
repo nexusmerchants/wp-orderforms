@@ -1,10 +1,11 @@
-<?php 
+<?php
 /**
 Plugin Name: OrderForms
-Plugin URI: http://orderforms.com/
+Plugin URI: https://www.orderforms.com
 Description: OrderForms.com allows you to take payments online from your website or ads with professionally designed order forms that are connected to your Stripe merchant account.
-Version: 1.4
-Author: Orderforms
+Version: 1.5.0
+Author: orderforms
+Author URI:  https://www.orderforms.com
 Text Domain: orderforms
 */
 

@@ -1,4 +1,5 @@
-<?php 
+<?php
+
 namespace OrderForms;
 
 class Base extends Admin {
@@ -7,7 +8,7 @@ class Base extends Admin {
 
 	public function __construct( $path, $url ) {
 		$this->path = $path;
-		$this->url = $url;
+		$this->url  = $url;
 		add_action( 'init', [ __CLASS__, 'register_post_type' ] );
 		add_action( 'admin_menu', [ $this, 'admin_settings_nav' ] );
 		add_action( 'add_meta_boxes', [ $this, 'add_meta_boxes' ] );
@@ -18,8 +19,10 @@ class Base extends Admin {
 	}
 
 	public static function instance( $path, $url ) {
-		if( !self::$instance ) 
+		if ( ! self::$instance ) {
 			self::$instance = new self( $path, $url );
+		}
+
 		return self::$instance;
 	}
 
@@ -29,10 +32,11 @@ class Base extends Admin {
 
 	public function load_custom_template( $template ) {
 		global $post;
-		
-		if( $post->post_type == self::POST_TYPE ) {
+
+		if ( $post->post_type == self::POST_TYPE ) {
 			return $this->path . 'templates/orderform-template.php';
 		}
+
 		return $template;
 	}
 
