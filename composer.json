@@ -1,7 +1,8 @@
 {
     "name": "orderforms/orderforms",
     "description": "OrderForms.com WordPress Plugin",
-    "type": "project",
+    "type": "wordpress-plugin",
+    "license": "GPL-2.0-or-later",
     "authors": [
         {
             "name": "Nexus Merchants",

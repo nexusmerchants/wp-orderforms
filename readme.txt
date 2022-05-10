@@ -1,6 +1,6 @@
 === OrderForms ===
-Contributors: orderforms, tacocode
-Donate link: https://www.orderforms.com/
+Contributors: orderforms, hiren1612, tacocode
+Donate link: https://www.orderforms.com
 Requires at least: 5.3
 Tested up to: 5.9.3
 Stable tag: trunk
@@ -29,6 +29,10 @@ the latest version of the plugin.
 2. Navigate to 'OrderForms > Settings' to change the default slug/prefix
 
 == Changelog ==
+
+= 1.5.1 =
+* Fix contributors
+* Fix typos/strings
 
 = 1.5.0 =
 * Fix code formatting
