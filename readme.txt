@@ -3,7 +3,7 @@ Contributors: orderforms, hiren1612, tacocode
 Donate link: https://www.orderforms.com
 Requires at least: 5.3
 Tested up to: 5.9.3
-Stable tag: trunk
+Stable tag: 1.5.7
 Requires PHP: 7.4
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -29,6 +29,9 @@ the latest version of the plugin.
 2. Navigate to 'OrderForms > Settings' to change the default slug/prefix
 
 == Changelog ==
+
+= 1.5.6 =
+* Various adjustments to data sanitization
 
 = 1.5.1 =
 * Fix contributors
