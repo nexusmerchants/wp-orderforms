@@ -5,14 +5,16 @@
     "license": "GPL-2.0-or-later",
     "authors": [
         {
-            "name": "Nexus Merchants",
-            "email": "support@nexusmerchants.com"
+            "name": "Peter Harlacher",
+            "email": "harlacher@protonmail.com"
         }
     ],
-    "autoload" : {
-        "psr-4" : {
-            "OrderForms\\" : "src/"
+    "autoload": {
+        "psr-4": {
+            "OrderForms\\": "src/"
         }
     },
-    "require": {}
+    "require": {
+        "php": "^7.4|^8.0"
+    }
 }
