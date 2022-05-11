@@ -2,17 +2,12 @@
 /**
  * The template for displaying the order form
  *
- * @link https://codex.wordpress.org/Template_Hierarchy
- *
- * @package WordPress
- * @subpackage Twenty_Seventeen
- * @since 1.0
- * @version 1.0
+ * @package OrderForms
  */
 
 $option = get_option( 'orderforms' );
 
-$url = sprintf( get_post_meta( $post->ID, 'orderforms_id', true ) );
+$url = get_post_meta( $post->ID, 'orderforms_id', true );
 add_action( 'wp_enqueue_scripts', function () {
 	wp_enqueue_style( 'orderform' );
 } );
@@ -23,7 +18,7 @@ add_action( 'wp_enqueue_scripts', function () {
 	<?php wp_head(); ?>
 </head>
 <body>
-<iframe class="orderform" src="<?php echo $url ?>" height="100%" width="100%"></iframe>
+<iframe class="orderform" src="<?php esc_attr_e($url)  ?>" height="100%" width="100%"></iframe>
 <?php wp_footer(); ?>
 </body>
 </html>
